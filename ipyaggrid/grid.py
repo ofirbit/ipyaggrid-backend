@@ -29,6 +29,8 @@ class Grid(wg.DOMWidget):
 
     _id = Int(0).tag(sync=True)
 
+    scroll = List([0, 0]).tag(sync=True)
+
     width = Unicode('100%').tag(sync=True)
     height = Unicode('').tag(sync=True)
     center = Bool(False).tag(sync=True)
@@ -289,7 +291,7 @@ class Grid(wg.DOMWidget):
 
     def export_html(self, build=False):
         """
-        If build==True, returns a str containing HTML code 
+        If build==True, returns a str containing HTML code
         for embedding as a standalone widget.
         If build==False, returns a dict containing 4 parts necessary
         to put several embed widgets in the same page.
