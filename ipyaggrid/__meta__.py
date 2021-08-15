@@ -48,7 +48,7 @@ __classifiers__ = ['Development Status :: 4 - Beta',
                    'Programming Language :: Python :: 3.5',
                    'Programming Language :: Python :: 3.6'
                    ]
-__include_package_data__ = False
+__include_package_data__ = True
 __package_data__ = {}
 __data_files__ = []
 __zip_safe__ = False
