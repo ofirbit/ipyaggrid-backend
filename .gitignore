@@ -35,3 +35,7 @@ wip/
 public-test/
 data/
 test-zone/
+py37/
+docs/
+
+.pytest_cache/
